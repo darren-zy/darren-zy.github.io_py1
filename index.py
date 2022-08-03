@@ -16,8 +16,6 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write("DearXuan's API by python!".encode())
         return
-
-
 print(handler)
 
 class handler(BaseHTTPRequestHandler):
@@ -26,3 +24,4 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(self.headers.get('x-forwarded-for').encode())
         return
+print(handler)
