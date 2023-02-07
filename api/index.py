@@ -15,9 +15,9 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
         self.wfile.write("DearXuan's API by python : ".encode())
+        print('\n')
         self.wfile.write(self.headers.get('x-forwarded-for').encode())
         return
 
 
 # print(handler)
-print
