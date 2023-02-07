@@ -15,8 +15,8 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
         self.wfile.write("DearXuan's API by python : ".encode())
-        print('\n')
         self.wfile.write(self.headers.get('x-forwarded-for').encode())
+        self.wfile.write(">>>ClashX URL（https://www.jjfjj.com/ss） ".encode())
         return
 
 
